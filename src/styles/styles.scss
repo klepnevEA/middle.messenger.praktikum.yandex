@@ -1,0 +1,16 @@
+@import "./_normalize.scss";
+@import "./_variables.scss";
+@import "./_mixins.scss";
+@import "./_fonts.scss";
+@import "./_setup.scss";
+
+//pages
+@import "../pages/logIn/logIn";
+@import "../pages/chatPage/chatPage";
+@import "../pages/page404/page404";
+
+//components
+@import "../components/title/title";
+@import "../components/input/input";
+@import "../components/button/button";
+@import "../components/chatItem/chatItem";

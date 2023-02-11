@@ -1,0 +1,33 @@
+@mixin desctopBig {
+  @media screen and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin desctop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: 414px) {
+    @content;
+  }
+}
+
+// @include desctopBig() {
+//     ---
+// }

@@ -1,0 +1,60 @@
+<div class="modal">
+<div class="modal__field">
+  <div class="modal__head">
+    <div class="modal__photo">
+      <img alt="photo" src={{photoUrl}} />
+    </div>
+  </div>
+    <div class="modal__body">
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="email" label="Почта" placeholder="ivan@yandex.ru"}}</div>
+        </div>
+        <div class="modal__cell">
+          <div>{{> input id="login" label="Логин" placeholder="ivan"}}</div>
+        </div>
+      </div>
+
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="first_name" label="Имя" placeholder="Иван"}}</div>
+        </div>
+        <div class="modal__cell">
+          <div>{{> input id="second_name" label="Фамилия" placeholder="Габанишвиллли"}}</div>
+        </div>
+      </div>
+
+      
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="display_name" label="Имя в чате" placeholder="Лапочка"}}</div>
+        </div>
+        <div class="modal__cell">
+          <div>{{> input id="phone" label="Телефон" placeholder="03"}}</div>
+        </div>
+      </div>
+
+      <div class="modal__row">
+              <div class="modal__cell">
+                <div>{{> input id="oldPassword" label="Старый пароль" placeholder="******"}}</div>
+              </div>
+              <div class="modal__cell">
+                <div>{{> input id="newPassword" label="Новый пароль" placeholder="******"}}</div>
+              </div>
+      </div>
+    </div>
+    
+    <div class="modal__footer">
+      <div class="modal__row">
+        {{> button id="login" text="Сохранить"}}
+      </div>
+      <div class="modal__row">
+        {{> button id="login" variant="button__secondary" text="Отменить" event="router('logIn')"}}
+      </div>
+      
+    </div>
+    
+</div>
+
+
+</div>

@@ -1,0 +1,98 @@
+<div class="chat-page">
+  <div class="chat-page__aside">
+    <div class="chat-page__aside-head">
+      <a class="chat-page__profile" onclick="router('editProfile')">Профиль <img src={{arrowRightUrl}} alt="arrow"></a>
+      <div class="chat-page__search">{{> input id="search" placeholder="Поиск"}}</div>
+    </div>
+    <div class="chat-page__aside__body">
+      <ul class="chat-list">
+        <li class="chat-list__item">
+          {{> chatItem name="Андрей" message="Изображение" time="10:00" count="2"}}
+        </li>
+        <li class="chat-list__item">
+          {{> chatItem name="Василий" message="У лукоморья дуб зелёный;
+          Златая цепь на дубе том:
+          И днём и ночью кот учёный
+          Всё ходит по цепи кругом;
+          Идёт направо — песнь заводит," time="10:00" count="5"}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="chat-page__body">
+    <div class="chat-page__body-head">
+      <div class="chat-avatar">
+        <div class="chat-avatar__photo">
+          <img src={{avatarUrl}} alt="avatar">
+        </div>
+        <div class="chat-avatar__name">Лапочка</div>
+      </div>
+      <div class="chat-menu">
+        <div class="chat-menu__button">
+          <img src={{menuPointsUrl}} alt="menu">
+        </div>
+        <div class="chat-menu__drop">
+          <div class="chat-menu__button">Удалить чат</div>
+        </div>
+      </div>
+    </div>
+    <div class="chat-page__body-body">
+
+      <ul class="messages">
+        <li class="messages__item">
+          <div class="messages__divider">19 июня</div>
+          <div class="messages__content">
+            <ul class="day-message">
+              <li class="day-message__item">
+                <div class="day-message__content">
+                  ла ла ла
+                </div>
+                <div class="day-message__time">10:00</div>
+              </li>
+              <li class="day-message__item day-message__item--ansver">
+                <div class="day-message__content">
+                  Привет!
+                </div>
+                <div class="day-message__time"><img class="day-message__check" src={{checkUrl}} alt="check">12:00</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="messages__item">
+          <div class="messages__divider">19 июня</div>
+          <div class="messages__content">
+            <ul class="day-message">
+              <li class="day-message__item">
+                <div class="day-message__content">
+                  Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего
+                  их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+                </div>
+                <div class="day-message__time">10:00</div>
+              </li>
+              <li class="day-message__item day-message__item--ansver">
+                <div class="day-message__content">
+                  Привет!
+                </div>
+                <div class="day-message__time"><img class="day-message__check" src={{checkUrl}} alt="check">12:00</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+
+
+    </div>
+    <div class="chat-page__body-footer">
+      <button class="add-file">
+        <img src={{chipUrl}} alt="avatar">
+      </button>
+      
+      <div class="input-message">{{> input id="input-message" placeholder="Сообщение"}}</div>
+      <button class="send-message">
+        <img src={{sendUrl}} alt="avatar">
+      </button>
+      
+    </div>
+  </div>
+</div>

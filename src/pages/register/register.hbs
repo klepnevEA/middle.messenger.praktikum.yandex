@@ -1,0 +1,61 @@
+<div class="modal">
+<div class="modal__field">
+  <div class="modal__head">
+    {{> title title="Регистрация"}}
+  </div>
+    <div class="modal__body">
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="email" placeholder="Почта"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="login" placeholder="Логин"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="first_name" placeholder="Имя"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="second_name" placeholder="Фамилия"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="phone" placeholder="Телефон"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="password" placeholder="Пароль"}}</div>
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          <div>{{> input id="passwordSecond" placeholder="Пароль еще раз"}}</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal__footer">
+      <div class="modal__row">
+        <div class="modal__cell">
+          {{> button id="login" text="Зарегистрироваться" event="router('editProfile')"}}
+        </div>
+      </div>
+      <div class="modal__row">
+        <div class="modal__cell">
+          {{> button id="login" variant="button__secondary" text="Войти" event="router('editProfile')"}}
+        </div>
+      </div>
+      
+    </div>
+    
+</div>
+
+
+</div>
