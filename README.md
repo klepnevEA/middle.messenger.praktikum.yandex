@@ -17,6 +17,6 @@
 
 ## Установка и запуск!
 
-npm install
-npm run start
-npm run build
+- npm install
+- npm run start
+- npm run build
