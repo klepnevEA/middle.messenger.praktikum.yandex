@@ -1,4 +1,4 @@
-import Handlebars from "./handlebars/dist/handlebars.runtime";
+import Handlebars from "../node_modules/handlebars/dist/handlebars.runtime";
 
 import logIn from "./pages/logIn/logIn.hbs";
 import register from "./pages/register/register.hbs";
