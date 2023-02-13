@@ -1,5 +1,5 @@
 <div class="modal">
-  <form class="modal__field">
+  <form class="modal__field" onsubmit="">
     <div class="modal__head">
       {{> title title="Войти"}}
     </div>
@@ -19,7 +19,7 @@
       <div class="modal__footer">
         <div class="modal__row">
           <div class="modal__cell">
-            {{> button id="login" text="Вход" event="onSubmit()"}}
+            {{> button id="login" text="Вход"}}
           </div>
         </div>
         <div class="modal__row">
