@@ -1,5 +1,5 @@
 <div class="modal">
-  <div class="modal__field">
+  <form class="modal__field">
     <div class="modal__head">
       {{> title title="Войти"}}
     </div>
@@ -19,19 +19,23 @@
       <div class="modal__footer">
         <div class="modal__row">
           <div class="modal__cell">
-            {{> button id="login" text="Вход" event="router('chatPage')"}}
+            {{> button id="login" text="Вход" event="onSubmit()"}}
           </div>
         </div>
         <div class="modal__row">
           <div class="modal__cell">
-            {{> button id="login" variant="button__secondary" text="Ещё не зарегистрированы?" event="router('register')"}}
+            {{> button id="login" variant="button__secondary" text="Ещё не зарегистрированы?"}}
           </div>
         </div>
       </div>
+  </form>
 
-      <div class="errors-page">
-        {{> button text="404" id='404' text="404" event="router('page404')"}}
-        {{> button text="500" id='500' text="500" event="router('page500')"}}
-      </div>
+  <div class="errors-page">
+    {{> button text="404" id='404' event="router('page404')"}}
+    {{> button text="500" id='500' event="router('page500')"}}
+    {{> button text="logIn" id="logIn" event="router('logIn')"}}
+    {{> button text="chatPage" id="chatPage" event="router('chatPage')"}}
+    {{> button text="register" id="register" event="router('register')"}}
+    {{> button text="editProfile" id="editProfile" event="router('editProfile')"}}
   </div>
 </div>

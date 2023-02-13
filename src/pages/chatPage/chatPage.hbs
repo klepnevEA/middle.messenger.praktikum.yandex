@@ -2,7 +2,7 @@
   <div class="chat-page__aside">
     <div class="chat-page__aside-head">
       <a class="chat-page__profile" onclick="router('editProfile')">Профиль <img src={{arrowRightUrl}} alt="arrow"></a>
-      <div class="chat-page__search">{{> input id="search" placeholder="Поиск"}}</div>
+      <form class="chat-page__search">{{> input id="search" placeholder="Поиск"}}</form>
     </div>
     <div class="chat-page__aside__body">
       <ul class="chat-list">
@@ -83,7 +83,7 @@
 
 
     </div>
-    <div class="chat-page__body-footer">
+    <form class="chat-page__body-footer">
       <button class="add-file">
         <img src={{chipUrl}} alt="avatar">
       </button>
@@ -92,7 +92,6 @@
       <button class="send-message">
         <img src={{sendUrl}} alt="avatar">
       </button>
-      
-    </div>
+    </form>
   </div>
 </div>

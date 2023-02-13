@@ -1,5 +1,5 @@
 <div class="modal">
-<div class="modal__field">
+<form class="modal__field">
   <div class="modal__head">
     <div class="modal__photo">
       <img alt="photo" src={{photoUrl}} />
@@ -49,12 +49,8 @@
         {{> button id="login" text="Сохранить"}}
       </div>
       <div class="modal__row">
-        {{> button id="login" variant="button__secondary" text="Отменить" event="router('logIn')"}}
+        {{> button id="login" variant="button__secondary" text="Отменить"}}
       </div>
-      
     </div>
-    
-</div>
-
-
+  </form>
 </div>
